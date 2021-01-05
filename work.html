@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+        <title>EX2I</title>
+		<link rel="shortcut icon" href="images/favicon_ex2i.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon_ex2i.ico" type="image/x-icon">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+	
+	<body class="">
+
+		<!-- Header -->
+		<header id="header" class="sub-header">
+			<div class="inner">
+				<div class="logo"><a href="index.html"><img class="pc-img" src="images/logo_black.png"><img class="mob-img" src="images/logo-black-mob.png"></a></div>
+				<a href="#menu" class="subpagemenu"></a>
+			</div>
+		</header>
+
+	<!-- Nav -->
+	<nav id="menu">
+		<div class="closeLogo"><a href="index.html" ><img class="menulogo-img" src="images/logo.png"><img class="logo-mob" src="images/logo-mob.png"></a></div>
+		<ul class="links">
+			<li><a href="about.html">About</a></li>
+			<li><a href="service.html">Service</a></li>
+			<li><a href="work.html">Work</a></li>
+			<li><a href="recruit.html">Recruit</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="icap.html">Icap</a></li>
+		</ul>
+		<p>서울특별시 강서구 공항대로 219, 센테니아 907호 
+			엑스투아이(주)<br>
+			Tel  02. 6925. 6250    Fax  02. 6442. 6253<br>    
+			E-mail  ex2i@ex2i.com
+		</p>
+	</nav>
+
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="row">
+						<div class="align-left 4u 12u(small)">
+							<div class="content sub-title">
+								<h1>WORK</h1>
+								<p>We Respect You</p>	
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<section class="wrapper paddingzero">
+					<div class="inner padding-top-zero">
+                        <div class="grid-style work-style">
+                            <div>
+                                <div class="box">
+                                    <div class="image fit">
+                                        <img class="mob-work-img" src="/images/rejortPoc.png" />
+                                    </div>
+                                    <div class="work-content">
+                                        <h4>리조트&호텔 통합 플랫폼 솔루션 PoC 구축</h4>
+                                        <p><span>CLIENTS</span>EX2I Solution</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="box">
+                                    <div class="image fit">
+                                        <img class="mob-work-img" src="/images/skt.png" />
+                                    </div>
+                                    <div class="work-content">
+                                        <h4>SKT Tsmartsafe 리뉴얼 개발</h4>
+                                        <p><span>CLIENTS</span>SKT</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-style work-style">
+                            <div>
+                                <div class="box">
+                                    <div class="image fit">
+                                        <img class="mob-work-img" src="/images/nugu.png" />
+                                    </div>
+                                    <div class="work-content">
+                                        <h4>NUGU CALL용 NCB서비스 개발/운영</h4>
+                                        <p><span>CLIENTS</span>SKT</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="box">
+                                    <div class="image fit">
+                                        <img class="mob-work-img" src="/images/abc.png" />
+                                    </div>
+                                    <div class="work-content">
+                                        <h4>ABC 마트 2.0 Native App 개발</h4>
+                                        <p><span>CLIENTS</span>ABC 마트</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+				</section>
+
+		<!-- Footer -->
+			<footer id="sub-footer" class="pc-img">
+				<div class="container">
+					<div class="row">
+						<div class="6u 12u$(small) align-left">
+							<p>서울특별시 강서구 공항대로 219, 센테니아 907호 엑스투아이(주)</p>
+							<p>Tel 02. 6925. 6250 Fax 02. 6442. 6253</p>
+							<p>E-mail ex2i@ex2i.com</p>
+						</div>
+						<div class="6u 12u$(small)">
+							<p id="today"></p>
+							<p>
+								<a>About</a>
+								<span>|</span>
+								<a>Recruit</a>
+								<span>|</span>
+								<a>Contact</a>
+							</p>
+							<p>ⓒ EX2I. All rights reserved.</p>
+						</div>
+					</div>
+
+				</div>
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            <script>
+				$(document).ready(function(){
+					let today = new Date();   
+
+					let year = today.getFullYear(); // 년도
+					let month = today.getMonth() + 1;  // 월
+					let date = today.getDate();  // 날짜
+
+					let todayFormat = 'Today ' + year + '. ' + month + '. ' + date; 
+
+					$("#today").text(todayFormat);
+				});                
+            </script>
+	</body>
+</html>

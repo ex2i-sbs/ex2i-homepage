@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+        <title>EX2I</title>
+		<link rel="shortcut icon" href="images/favicon_ex2i.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon_ex2i.ico" type="image/x-icon">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    </head>
+    <style>
+
+    </style>
+
+	<body class="">
+
+		<!-- Header -->
+        <header id="header" class="sub-header">
+            <div class="inner">
+                <div class="logo"><a href="index.html"><img class="pc-img" src="images/logo_black.png"><img class="mob-img" src="images/logo-black-mob.png"></a></div>
+                <a href="#menu" class="subpagemenu"></a>
+            </div>
+        </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+        <div class="closeLogo"><a href="index.html" ><img class="menulogo-img" src="images/logo.png"><img class="logo-mob" src="images/logo-mob.png"></a></div>
+        <ul class="links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="recruit.html">Recruit</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="icap.html">Icap</a></li>
+        </ul>
+        <p>서울특별시 강서구 공항대로 219, 센테니아 907호 
+            엑스투아이(주)<br>
+            Tel  02. 6925. 6250    Fax  02. 6442. 6253<br>    
+            E-mail  ex2i@ex2i.com
+        </p>
+    </nav>
+        
+        <section id="One" class="wrapper style3">
+            <div class="inner">
+                <header class="align-left icapBanner">
+                    <h3>지능형 상황인식 플랫폼</h3>
+                    <h2>ICAP</h2>
+                    <h5>R.Box를 통해 데이터 수집, 관리, 모니터링, 데이터 분석 및 통계가 가능하며,</h5>
+                    <h5>다양한 산업 분야에 적용이 가능합니다.</h5>
+                </header>
+            </div>
+        </section>
+
+        <section id="two" class="wrapper style2 paddingtop ">
+            <div class="inner icap-inner-mob">
+                <div class="box icapbox">
+                    <div class="content">
+                        <header class="align-center rbox">
+                            <h2>상황별 ICAP R.BOX</h2>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </header>
+                    </div>
+                </div>
+            </div>
+            <div class="inner icapgray icap-img-size">
+                <div class="box icapbox">
+                    <div class="content">
+                        <div class="swiper-container icapgray">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="/images/icap1.png" /></div>
+                              <div class="swiper-slide"><img src="/images/icap2.png" /></div>
+                              <div class="swiper-slide"><img src="/images/icap3.png" /></div>
+                              <div class="swiper-slide"><img src="/images/icap4.png" /></div>
+                              <div class="swiper-slide"><img src="/images/icap5.png" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+		<!-- Footer -->
+			<footer id="sub-footer" class="pc-img">
+				<div class="container">
+					<div class="row">
+						<div class="6u 12u$(small) align-left">
+							<p>서울특별시 강서구 공항대로 219, 센테니아 907호 엑스투아이(주)</p>
+							<p>Tel 02. 6925. 6250 Fax 02. 6442. 6253</p>
+							<p>E-mail ex2i@ex2i.com</p>
+						</div>
+						<div class="6u 12u$(small)">
+							<p id="today"></p>
+							<p>
+								<a>About</a>
+								<span>|</span>
+								<a>Recruit</a>
+								<span>|</span>
+								<a>Contact</a>
+							</p>
+							<p>ⓒ EX2I. All rights reserved.</p>
+						</div>
+					</div>
+
+				</div>
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+			<script>
+				var mySwiper = new Swiper('.swiper-container', {
+				speed: 1000,
+				loop: true,
+				simulateTouch:false,
+				// autoplay: {
+				// 	delay: 5000,
+				// 	disableOnInteraction: false,
+				// },
+				// Navigation arrows
+				navigation: {
+					nextEl: '.next-btn',
+					prevEl: '.pre-btn',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                    return '<span class="' + className + ' icapname'+ (index+1) + '">' + (index + 1) + '</span>';
+                    }
+                }
+                });
+
+
+
+                $(document).ready(function(){
+                    $('.icapname1').eq(0).text('스마트팩토리');
+                    $('.icapname2').eq(0).text('스마트홈');
+                    $('.icapname3').eq(0).text('병원');
+                    $('.icapname4').eq(0).text('어린이집');
+                    $('.icapname5').eq(0).text('수목원');
+
+
+					let today = new Date();   
+
+					let year = today.getFullYear(); // 년도
+					let month = today.getMonth() + 1;  // 월
+					let date = today.getDate();  // 날짜
+
+					let todayFormat = 'Today ' + year + '. ' + month + '. ' + date; 
+
+					$("#today").text(todayFormat);
+
+                });
+
+
+                
+            </script>
+	</body>
+</html>
