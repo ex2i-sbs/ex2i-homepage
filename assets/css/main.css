@@ -2208,7 +2208,7 @@
 				width: 1.385rem;
 			}
 			input[type="radio"] + label:before {
-				content: url('/images/off.png');
+				content: url('../../images/off.png');
 				display: inline-block;
 				height: 1.442rem;
 				left: 0;
@@ -2223,7 +2223,7 @@
 			content: '\f00c';
 		}
 		input[type="radio"]:checked + label:before {
-			content: url('/images/0-n.png');
+			content: url('../../images/0-n.png');
 		}
 
 	input[type="checkbox"] + label:before {
@@ -4634,7 +4634,7 @@
 			background: #FFF !important;
 		}
 		.subpagemenu::before {
-			content: url("/images/햄버거_black.png") !important;
+			content: url("../../images/햄버거_black.png") !important;
 		}
 		.sub-footer {
 			font-size: 0.8rem !important;
@@ -4746,7 +4746,7 @@
 			padding-left: 5rem;
 		}
 		.downbtn-group a:last-child {
-			float: right;
+			margin-left: 2rem;
 		}
 		#sub-footer {
 		padding: 3rem 0 4rem 0;
@@ -4851,7 +4851,7 @@
 
 /* Recruit */
 .recruit-img {
-	background-image: url('/images/recruit1.png');
+	background-image: url('../../images/recruit1.png');
 }
 .recruit-img-font {
 	position: absolute;
@@ -5271,7 +5271,7 @@ ul.actions .pgs-li {
 		display: none !important;
 	}
 	.subpagemenu::before {
-		content: url("/images/햄버거-black-mob.png") !important;
+		content: url("../../images/햄버거-black-mob.png") !important;
 	}
 }
 
@@ -5591,24 +5591,24 @@ ul.actions .pgs-li {
 	background-color: #fafafa !important;
 }
 .swiper-pagination-bullet {
-	border-radius: 20px;
-	display: inline;
+	border-radius: 20px !important;
+	display: inline !important;
 	font-size: 1rem !important;
-	font-weight: 500;
-	padding: 0.5rem 1.3rem;
-	margin-right: 0.5rem;
-	height: 100%;
-	text-align: center;
-	line-height: 20px;
-	font-size: 12px;
-	color: #000;
-	opacity: 1;
-	border: 2px solid #111111;
-	background: #ffffff;
+	font-weight: 500 !important;
+	padding: 0.5rem 1.3rem !important;
+	margin-right: 0.5rem !important;
+	height: 100% !important;
+	text-align: center !important;
+	line-height: 20px !important;
+	color: #000 !important;
+	opacity: 1 !important;
+	border: 2px solid #111111 !important;
+	background: #ffffff !important;
+	width: 100% !important;
 }
 .swiper-pagination-bullet-active {
-	color: #fff;
-	background: #111111;
+	color: #fff !important;
+	background: #111111 !important;
 	border-radius: 20px;
 }
 .swiper-pagination-bullet:focus {
